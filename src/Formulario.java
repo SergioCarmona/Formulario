@@ -74,6 +74,7 @@ public class Formulario extends JFrame  implements ChangeListener, ItemListener 
         setLayout(null);
         setTitle("Formulario");
         setSize(450,510);
+
         setBackground(Color.GRAY);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setBackground(Color.PINK);
@@ -578,12 +579,15 @@ public class Formulario extends JFrame  implements ChangeListener, ItemListener 
 
     private void initTextPane() {
 
+
+
         ejecutado.setBounds(800, 10, 400, 650);
         ejecutado.setBorder(new LineBorder(Color.DARK_GRAY));
         ejecutado.setVisible(false);
         add(ejecutado);
         HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
         ejecutado.setEditorKit(htmlEditorKit);
+
         JScrollPane scrollPane = new JScrollPane(ejecutado);
         scrollPane.setBounds(790,30,500,500);
         add(scrollPane);
