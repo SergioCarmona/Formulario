@@ -571,6 +571,7 @@ public class Formulario extends JFrame  implements ChangeListener, ItemListener 
             }
         });
         add(generar);
+
     }
 
 
